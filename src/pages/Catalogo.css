@@ -1,0 +1,52 @@
+.catalog-page {
+  margin-bottom: 24px;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.show-card {
+  min-width: 0;
+  margin: 0;
+}
+
+.show-poster {
+  display: block;
+}
+
+.show-poster img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.poster-fallback {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  place-items: center;
+  padding: 8px;
+  background: #eee;
+}
+
+.show-card-info {
+  padding-top: 8px;
+}
+
+.show-title {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.show-genres {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.show-remove {
+  margin-top: 8px;
+}
